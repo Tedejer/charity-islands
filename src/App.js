@@ -25,7 +25,7 @@ function App() {
     <div>
       <NavbarV1 />
       <Routes>
-        <Route path="/Home" element={<HomePage />} />
+        <Route path="" element={<HomePage />} />
         <Route path="/AboutPage" element={<AboutPage />} />
 
         {/* pages not in navbar */}
