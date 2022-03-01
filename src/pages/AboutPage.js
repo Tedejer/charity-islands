@@ -2,9 +2,9 @@ import React from "react";
 
 function AboutPage() {
   return (
-    <div>
+    <div class="body">
       <h1 class="About-Header">AboutPage</h1>
-      <section class="About=container">
+      <section class="About-container">
         <div class="Question-1">
           <h1 class="About-Page">What is Charity Islands?</h1>
 

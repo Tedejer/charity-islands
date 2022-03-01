@@ -15,6 +15,7 @@ import AboutPage from "./pages/AboutPage";
 import Profile from "./pages/ProfileSettings";
 import DebugPage from "./pages/DebugPage";
 import InfoPage from "./pages/InfoPage";
+import ResultsPage from "./pages/ResultsPage";
 
 // Styling
 import "./css/main.css";
@@ -25,13 +26,16 @@ function App() {
       <NavbarV1 />
       <Routes>
         <Route path="/" element={<HomePage />} />
+        <Route path="/AboutPage" element={<AboutPage />} />
+
+        {/* pages not in navbar */}
         <Route path="/LoginPage" element={<LoginPage />} />
         <Route path="/UserPage/:username" element={<UserPage />} />
         <Route path="/Register" element={<Register />} />
         <Route path="/Profile" element={<Profile />} />
-        <Route path="/AboutPage" element={<AboutPage />} />
         <Route path="/Debug" element={<DebugPage />} />
-        <Route path="/InfoPage" element={<InfoPage />} />
+        <Route path="/InfoPage/:charityname" element={<InfoPage />} />
+        <Route path="/ResultsPage/:searchedelem" element={<ResultsPage />} />
         <Route path="*" element={<ErrorPage />} />
       </Routes>
       <Footer />
