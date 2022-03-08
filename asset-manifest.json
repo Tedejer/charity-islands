@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/charity-islands/static/css/main.e6caf647.css",
-    "main.js": "/charity-islands/static/js/main.42dd6bb6.js",
+    "main.css": "/charity-islands/static/css/main.c71f8ca1.css",
+    "main.js": "/charity-islands/static/js/main.71f22e98.js",
     "static/media/name_flat_color.png": "/charity-islands/static/media/name_flat_color.6415ece4249067189355.png",
-    "static/media/brand_flat.svg": "/charity-islands/static/media/brand_flat.b8bb28b6bc8e80e1d3a6c1ef60141509.svg",
+    "static/media/brand_flat.svg": "/charity-islands/static/media/brand_flat.2bddd8543cd95b830e57522d945bf62e.svg",
     "index.html": "/charity-islands/index.html",
-    "main.e6caf647.css.map": "/charity-islands/static/css/main.e6caf647.css.map",
-    "main.42dd6bb6.js.map": "/charity-islands/static/js/main.42dd6bb6.js.map"
+    "main.c71f8ca1.css.map": "/charity-islands/static/css/main.c71f8ca1.css.map",
+    "main.71f22e98.js.map": "/charity-islands/static/js/main.71f22e98.js.map"
   },
   "entrypoints": [
-    "static/css/main.e6caf647.css",
-    "static/js/main.42dd6bb6.js"
+    "static/css/main.c71f8ca1.css",
+    "static/js/main.71f22e98.js"
   ]
 }
