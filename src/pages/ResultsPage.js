@@ -1,22 +1,47 @@
-import React from "react";
-import { renderMatches, useParams, Link } from "react-router-dom";
+import React, { useState } from "react";
+import { useParams } from "react-router-dom";
+import { Button, Container, Row, Col } from "react-bootstrap";
+
+// Components
+import Results from "../components/Results";
 
 function ResultsPage() {
   let { searchedelem } = useParams();
+  const [elem, setElem] = useState("");
+
+  if (elem) {
+    searchedelem = elem;
+  }
+
   return (
-    <div class="results-body">
-      <div class="results-container" style={{ border: "1px solid red" }}>
-        <div class="searched-element">{searchedelem}</div>
-        <div class="searched-results">
-          Searched Results
-          <ul class="result-1">Results for '{searchedelem}'</ul>
-          <Link as={Link} to="/InfoPage">
-            <li>{searchedelem} 1</li>
-            <li>{searchedelem} 2</li>
-            <li>{searchedelem} 3</li>
-          </Link>
-        </div>
-      </div>
+    <div>
+      <Container fluid>
+        <form class="results-search-bar">
+          <Row className="justify-content-center">
+            <Col xs={{ span: 4, offset: 3 }} md={{ span: 5, offset: 3 }}>
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder={searchedelem}
+                aria-label="Search"
+                onChange={(e) => setElem(e.target.value)}
+              />
+            </Col>
+            <Col xs={4}>
+              <Button
+                variant="outline-success"
+                type="button"
+                disabled={!elem}
+                onClick={elem}
+              >
+                Search
+              </Button>
+            </Col>
+          </Row>
+        </form>
+      </Container>
+      {/* End Search */}
+      <Results resultWord={searchedelem} />
     </div>
   );
 }
