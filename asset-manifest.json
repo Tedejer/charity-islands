@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/charity-islands/static/css/main.059edd27.css",
-    "main.js": "/charity-islands/static/js/main.39ec116d.js",
+    "main.js": "/charity-islands/static/js/main.e85e081c.js",
     "static/media/name_flat_color.png": "/charity-islands/static/media/name_flat_color.6415ece4249067189355.png",
     "static/media/brand_flat.svg": "/charity-islands/static/media/brand_flat.2bddd8543cd95b830e57522d945bf62e.svg",
     "index.html": "/charity-islands/index.html",
     "main.059edd27.css.map": "/charity-islands/static/css/main.059edd27.css.map",
-    "main.39ec116d.js.map": "/charity-islands/static/js/main.39ec116d.js.map"
+    "main.e85e081c.js.map": "/charity-islands/static/js/main.e85e081c.js.map"
   },
   "entrypoints": [
     "static/css/main.059edd27.css",
-    "static/js/main.39ec116d.js"
+    "static/js/main.e85e081c.js"
   ]
 }
