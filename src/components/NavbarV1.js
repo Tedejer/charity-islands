@@ -7,7 +7,7 @@ function NavbarV1() {
   return (
     <Navbar classname="color-nav" bg="dark" variant="dark" expand="sm">
       <Navbar className="Container-fluid">
-        <Navbar.Brand as={Link} to="/">
+        <Navbar.Brand as={Link} to="/charity-islands">
           <img src={logo} alt="Charity Islands" width="40" height="40" />
         </Navbar.Brand>
       </Navbar>
