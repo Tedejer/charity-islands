@@ -10,7 +10,7 @@
 }
 
 .about-body {
-  height: 90vh;
+  min-height: 80vh;
 }
 
 .register_body {
@@ -91,37 +91,7 @@
 }
 
 .home-body {
-  height: 90vh;
-}
-
-.container-home {
-  width: 100vw;
-  height: 100vh;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 100px 250px 50px 1fr;
-  box-sizing: border-box;
-}
-
-.Logo-Container {
-  grid-column-start: 2;
-  grid-column-end: 3;
-  grid-row-start: 2;
-  grid-row-end: 3;
-  justify-content: center;
-  align-items: center;
-}
-
-.Logo {
-  width: 827.45px;
-  height: 296px;
-}
-
-.Search-Bar {
-  grid-column-start: 2;
-  grid-column-end: 3;
-  grid-row-start: 4;
-  grid-row-end: 5;
+  min-height: 80vh;
 }
 
 .AdvSearch-button {
@@ -273,7 +243,7 @@
 
 .results-container {
   width: 99vw;
-  height: auto;
+  min-height: auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
@@ -298,19 +268,20 @@
   grid-column-start: 1;
   grid-column-end: 5;
   text-align: left;
-  text-decoration: underline;
   text-decoration-color: black;
 }
 
 .result-link {
+  list-style: none;
   color: #0000ee;
-  padding: 10px;
+  padding-top: 1rem;
   cursor: pointer;
   text-decoration: underline;
   text-decoration-color: #0000ee;
 }
 
 .footer {
+  padding-top: 1rem;
   text-align: center;
 }
 
@@ -323,8 +294,9 @@
 }
 
 .btn:focus {
-  outline: none;
-  box-shadow: none;
+  /* the !important is really the key here, it overrides everything else */
+  outline: none !important;
+  box-shadow: none !important;
 }
 
 /*# sourceMappingURL=main.css.map */
